@@ -9,7 +9,7 @@
 """
 
 
-def word_transform(word: str) -> str:
+def int_func(word: str) -> str:
     """
     Преобразуем первую букву в слове в прописную
 
@@ -30,9 +30,9 @@ def sentence_transform(sentence: str) -> str:
     :return: str
     """
     list_of_words = sentence.split()
-    new_list_of_words = list(map(word_transform, list_of_words))
+    new_list_of_words = list(map(int_func, list_of_words))
     return ' '.join(new_list_of_words)
 
 
-print(word_transform('word'))
+print(int_func('word'))
 print(sentence_transform('my test sentence'))
